@@ -1,9 +1,13 @@
-package com.springweb.model;
+package com.zubentsov.model;
 
 public class Car {
+
 	private int carId;
 	private String manufacturer;
 	private int model;
+	private String city;
+	private String registrationNumber;
+	
 	
 	public int getCarId() {
 		return this.carId;
@@ -29,10 +33,28 @@ public class Car {
 		this.model= model;
 	}
 	
+	
+	public String getCity() {
+		return this.city;
+	}
+	
+	public void setCity(String city) {
+		this.city= city;
+	}
+	
+	
+	public String getRegistrationNumber() {
+		return this.registrationNumber;
+	}
+	
+	public void setRegistrationNumber(String registrationNumber) {
+		this.registrationNumber= registrationNumber;
+	}
+	
+	
 	@Override
 	public String toString() {
 		return "Car [carUd=" + this.carId + " , manufacturer =" + this.manufacturer + " , model=" + this.model + "]";
 	}
-	
 	
 }

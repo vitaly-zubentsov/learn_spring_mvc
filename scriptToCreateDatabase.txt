@@ -1,6 +1,6 @@
 CREATE DATABASE cars;
 
-cars  | CREATE TABLE `cars` (
+CREATE TABLE `cars` (
   `carId` int NOT NULL AUTO_INCREMENT,
   `manufacturer` varchar(45) DEFAULT NULL,
   `model` int DEFAULT NULL,
