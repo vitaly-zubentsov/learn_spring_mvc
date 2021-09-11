@@ -23,7 +23,7 @@ public class CarDao {
 		try {
 			PreparedStatement preparedStatement = connection
 					.prepareStatement("INSERT INTO cars(manufacturer,model) VALUES(?,?)");
-			preparedStatement.setString(1, car.getMunufacturer());
+			preparedStatement.setString(1, car.getManufacturer());
 			preparedStatement.setInt(2, car.getModel());
 			preparedStatement.executeUpdate();
 		} catch (SQLException e) {
@@ -82,7 +82,7 @@ public class CarDao {
 		try {
 			PreparedStatement preparedStatement = connection
 					.prepareStatement("Update cars SET manufacturer=?, model=? WHERE carId=?");
-			preparedStatement.setString(1, car.getMunufacturer());
+			preparedStatement.setString(1, car.getManufacturer());
 			preparedStatement.setInt(2, car.getModel());
 			preparedStatement.setInt(3, car.getCarId());
 			preparedStatement.executeUpdate();

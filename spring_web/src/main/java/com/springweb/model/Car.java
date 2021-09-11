@@ -2,7 +2,7 @@ package com.springweb.model;
 
 public class Car {
 	private int carId;
-	private String munufacturer;
+	private String manufacturer;
 	private int model;
 	
 	public int getCarId() {
@@ -13,25 +13,25 @@ public class Car {
 		this.carId= carId;
 	}
 	
-	public String getMunufacturer() {
-		return this.munufacturer;
+	public String getManufacturer() {
+		return this.manufacturer;
 	}
 	
-	public void setManufacturer(String munufacturer) {
-		this.munufacturer = munufacturer;
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
 	}
 	
 	public int getModel() {
 		return this.model;
 	}
 	
-	public void setModel(int Model) {
+	public void setModel(int model) {
 		this.model= model;
 	}
 	
 	@Override
 	public String toString() {
-		return "Car [carUd=" + this.carId + " , manufacturer =" + this.munufacturer + " , model=" + this.model + "]";
+		return "Car [carUd=" + this.carId + " , manufacturer =" + this.manufacturer + " , model=" + this.model + "]";
 	}
 	
 	
