@@ -1,0 +1,10 @@
+CREATE DATABASE cars;
+
+cars  | CREATE TABLE `cars` (
+  `carId` int NOT NULL AUTO_INCREMENT,
+  `manufacturer` varchar(45) DEFAULT NULL,
+  `model` int DEFAULT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  `registrationNumber` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`carId`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8
