@@ -67,7 +67,7 @@ public class CarDao {
 		Car car = new Car();
 		try {
 			PreparedStatement preparedStatement = connection
-					.prepareStatement("SELECT manufacturer, model FROM cars WHERE carId=?");
+					.prepareStatement("SELECT manufacturer, model, city, registrationNumber FROM cars WHERE carId=?");
 			preparedStatement.setInt(1, carId);
 			ResultSet rs = preparedStatement.executeQuery();
 			
@@ -84,10 +84,10 @@ public class CarDao {
 		return car;
 	}
 	
-	public void updateCar (Car car) {
+	public void updateCar(Car car) {
 		try {
 			PreparedStatement preparedStatement = connection
-					.prepareStatement("Update cars SET manufacturer=?, model=?, city=?, registrationNumber=? WHERE carId=?");
+					.prepareStatement("UPDATE cars SET manufacturer=?, model=?, city=?, registrationNumber=? WHERE carId=?");
 			preparedStatement.setString(1, car.getManufacturer());
 			preparedStatement.setInt(2, car.getModel());
 			preparedStatement.setString(3, car.getCity());
